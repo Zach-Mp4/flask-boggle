@@ -1,0 +1,12 @@
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 5 columns */
+    grid-template-rows: repeat(5, 1fr);    /* 5 rows */
+    gap: 5px; /* Adjust the gap between grid items */
+}
+
+.grid-item {
+    background-color: #ddd; /* Background color of grid items */
+    padding: 10px; /* Padding inside grid items */
+    text-align: center;
+}

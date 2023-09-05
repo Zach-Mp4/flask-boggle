@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/static/base.css">
+</head>
+<body>
+    <h1 id="high"></h1>
+    <div class="grid-container">
+        {% for row in board %}
+            {% for thing in row %}
+            <div class="grid-item">{{thing}}</div>
+            {% endfor %}
+        {% endfor %}
+    </div>
+
+    <form id="guess-form">
+        <input type="text" placeholder="GUESS" id="guess">
+        <button type="submit">SUBMIT</button>
+    </form>
+    <h2 id="timer"></h2>
+    <h3 id="result"></h3>
+    <h2 id="score"></h2>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="/static/base.js"></script>
+</body>
+</html>
